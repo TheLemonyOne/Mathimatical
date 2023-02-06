@@ -1,0 +1,27 @@
+#I finally figured out how to make the program restart and take multiple inputs. It may not work on here
+    #but I managed to get it working in my IDLE program. Feel free to use it.
+
+while True:
+    #This is where the program will start everytime
+    while True:
+        marks = int(input("Please enter grade of student: \n"))
+        if (marks >= 90):
+            print("Their grade is Excellent!")
+        elif (marks < 90 and marks >= 75):
+            print("Their grade is First Class!")
+        elif (marks < 75 and marks >= 40):
+            print("Their grade is Average")
+        else:
+            print("This student has a failing grade, talk to them soon")
+        #This part takes user input again to restart the loop
+        answer = str(input("Run again? (y/n): "))
+        if answer in ('y', 'n'):
+            break
+        print("Invalid input")
+    if answer == 'y':
+        continue
+    #This is a nice little goodbye I wrote when the user is done with the program.
+    else:
+        print("Goodbye")
+        break
+
