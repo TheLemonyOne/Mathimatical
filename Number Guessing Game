@@ -1,0 +1,12 @@
+import random
+generatedNumber = random.randrange(1,10)
+userGuess = int(input())
+
+#Input a number between 1 and 10 and see if you can beat the machine!
+
+if userGuess == generatedNumber:
+    print("You guessed right! Congratulations")
+elif userGuess < generatedNumber:
+    print("Too low!")
+else:
+    print("Too high!")
