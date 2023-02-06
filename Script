@@ -1,0 +1,11 @@
+#Taking user input:
+N = int(input())
+
+#Math involved:
+nums=int(N*(N+1)/2)
+
+#Printing the output:
+print("You entered: " + str(N))
+print("The sum of the entered number's integers is: " + str(nums))
+
+#Thanks for looking at my code!
